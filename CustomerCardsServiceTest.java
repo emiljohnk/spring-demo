@@ -191,7 +191,7 @@ class CustomerCardsServiceTest {
 
 		Exception e = Assertions.assertThrows(EKartException.class,
 				() -> paymentService.authenticatePayment(customerEmailId, transactionDTO));
-		Assertions.assertEquals("PaymentService.CARD_DOES_NOT_BELONGS", e.getMessage());
+		Assertions.assertEquals("PaymentService.CARD_DOES_NOT_BELONGS", e.getMessage( ));
 
 	}
 }
